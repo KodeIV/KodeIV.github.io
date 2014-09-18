@@ -24,6 +24,45 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+.nav li{
+  display:inline;
+  
+}
+
+.nav a {color:#5a5a5a;
+    font-size:11px;
+    font-weight:bold;
+    padding-top:14px;
+    padding-bottom:14px;
+    padding-left:10px;
+    padding-right:10px;
+    text-transform:uppercase;
+    }
+
+.jumbotron {height:500px;
+  background-image:url('http://s30.postimg.org/mvpn7jys1/IMG_1184.jpg')
+  
+}
+
+.jumbotron h1{
+  color:#fff;
+  font-weight:bold;
+  font-size:60px;
+}
+.jumbotron p{
+  font-size:24px;
+}
+
+.jumbotron .container{
+  position:relative;
+  top:100px;
+}
+
+
+
+
+
+
 
 
 // Using media queries with like this:
