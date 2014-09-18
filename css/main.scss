@@ -63,8 +63,7 @@ $on-laptop:        800px;
   top:100px;
 }
   
-  
-  h1 {
+h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 90px;
 line-height: 1em;
@@ -85,7 +84,7 @@ line-height: 1em;
 	display: inline-block;
 	margin: 1em;
 	width: 210px;
- xborder-radius: 100%;
+
   
 }
  
@@ -95,7 +94,7 @@ line-height: 1em;
 	position: relative;
       width: 210px;
     height: 280px;
-  xborder-radius: 100%;
+
   
 }
 
@@ -111,7 +110,6 @@ line-height: 1em;
 	display: block;
 	width: 210px;
   height: 280px;
-  xborder-radius: 100%;
   
 }
  
@@ -122,9 +120,15 @@ line-height: 1em;
 	display: table-cell;
 	width: 210px;
   height: 280px;
-  xborder-radius: 100%;
+	
+	opacity: 0;
+	position: absolute;
   background-color: none;
+  
+	
 	top: 40px;
+ 
+
 	z-index: 100;
 }
 
@@ -137,7 +141,6 @@ line-height: 1em;
 	width: 210px;
   height: 280px;
 	vertical-align: middle;
-  xborder-radius: 100%;
   background-color: black;
   
 }
