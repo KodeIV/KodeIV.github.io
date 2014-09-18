@@ -24,6 +24,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+
+
+
 .nav li{
   display:inline;
   
@@ -40,6 +43,7 @@ $on-laptop:        800px;
     }
 
 .jumbotron {height:500px;
+  width:1300px;
   background-image:url('http://s30.postimg.org/mvpn7jys1/IMG_1184.jpg')
   
 }
@@ -59,9 +63,8 @@ $on-laptop:        800px;
 }
 
 
-* {
-  background-color: #5C6464;
-}
+
+
 
 h1 {
   font-size: 60px;
@@ -75,7 +78,7 @@ h1 {
 
 .photo-grid {
 	margin: 1em auto;
-	max-width: 1160px;
+	max-width: 1350px;
 	text-align: center;
 }
  
