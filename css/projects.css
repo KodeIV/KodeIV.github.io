@@ -1,0 +1,159 @@
+---
+---
+#projectDays {
+  position: relative;
+	width:auto;
+	height:2100px;
+  border: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+ 
+ 
+}
+.projectPictures{
+    height:auto;
+    width:auto;
+    display: inline-block;
+    
+    border-radius:25px;
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+.projectPictures:hover{      
+    opacity: 1.0;
+    filter: alpha(opacity=50);
+  
+  }
+
+h1 {
+  text-align: center;
+  font-size: 150px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 90px;
+  line-height: 1em;
+  color: #20f9c8;
+  display: inline;
+  padding-left: 30px;
+}
+  
+h2 {
+  text-align:relative;
+  color: #FFFFFF;
+ 
+}
+
+#socialmediainsta {
+  padding: 100px;
+}
+
+#socialmediatfb {
+  padding: 160px;
+}
+#cbackgroundimg {
+  background-image: url("http://i.imgur.com/VwL8ryV.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  padding:1px;
+}
+#pbackgroundimg {
+  background-image: url("http://i.imgur.com/LRAiR5F.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  padding:1px;
+}
+#abackgroundimg {
+  background-image: url("http://backgroundwallpaper.co/wp-content/uploads/2013/06/hd-wallpapers-3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  padding-bottom:80px;
+  height:1000px;
+  width:2000;
+}
+
+
+
+}
+
+.photo-grid {
+	margin: 1em auto;
+	width: 1160px;
+  height: 3000px;
+	text-align: center;
+  border-radius: 40px;
+}
+ 
+.photo-grid li {
+	display: inline-block;
+	margin: 1em;
+	width: 410px;
+  height: 380px;
+  border-radius: 40px;
+  
+}
+ 
+ 
+.photo-grid figure {
+	overflow: hidden;
+	position: relative;
+  width: 410px;
+  height: 480px;
+  border-radius: 40px;
+
+  
+}
+
+.photo-grid li:hover figcaption {
+	opacity: 0.75;
+    transition: 1000ms, ease-out;
+  
+}
+
+.photo-grid img {
+	display: block;
+	width: 410px;
+  height: 480px;
+  border-radius:40px;
+  
+  
+}
+ 
+
+
+.photo-grid figcaption {
+
+	display: table-cell;
+	width: 410px;
+  height: 480px;
+	
+	opacity: 0;
+	position: absolute;
+  background-color: none;
+  border-radius: 40px;
+  
+	
+	top: 40px;
+ 
+
+  *z-index: 200;
+}
+
+.photo-grid figcaption p {
+  color: white;
+	display: table-cell;
+	font-size: 2.0em;
+	position: relative;
+	top: -40px;
+  bottom: 40px;
+	width: 410px;
+  height: 480px;
+  text-align: center;
+	vertical-align: center;
+  background-color: black;
+  border-radius: 40px;
+  
+  
+}
