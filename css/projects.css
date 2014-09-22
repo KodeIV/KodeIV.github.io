@@ -33,8 +33,9 @@ h1 {
   font-size: 90px;
   line-height: 1em;
   color: #20f9c8;
-  display: inline;
   padding-left: 30px;
+  padding-top: 30px;
+  position: fixed, center;
 }
   
 h2 {
@@ -67,7 +68,7 @@ h2 {
 #abackgroundimg {
   background-image: url("http://backgroundwallpaper.co/wp-content/uploads/2013/06/hd-wallpapers-3.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: auto;
   background-position: center; 
   padding-bottom:80px;
   height:1000px;
@@ -161,4 +162,5 @@ h2 {
 .navlogo {
   height:120px;
   width: 80px;
+  
 }
