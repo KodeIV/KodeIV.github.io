@@ -4,48 +4,44 @@
 <meta http-equiv = "refresh" content = "30"/>
  <meta charset="utf-8">
   
- <title>jQuery</title>
+ <title>News</title>
  <title>jQuery UI Tabs - Default functionality</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
-  <link type = "text/css"; rel="stylesheet"; href="news.css">
+  
   <script>
   $(function() {
     $( "#tabs" ).tabs();
   });
   </script>
-   <script type="text/javascript" src="js/news.js"></script>
+   
 </head>
 <body>
+  
   <div id="tabs">
     <ul>
-    <li><a href="#tabs-1">Football</a></li>
-    <li><a href="#tabs-2">UK news</a></li>
-    <li><a href="#tabs-3">Travel</a></li>
+    <li><a href="#uk-news">UK-news</a></li>
+    <li><a href="#football">Football</a></li>
+    <li><a href="#travel">Travel</a></li>
+    <li><a href="#tabs-4">+</a></li>
   </ul>
-  <div id="tabs-1">
-      <div id= "news" class = "listClass"></div>
-      <div id= "news1"class = "listClass"></div>
-      <div id= "news2"class = "listClass"></div>
-      <div id= "news3"class = "listClass"></div>
-      <div id= "news4"class = "listClass"></div>
+ 
+    
+  <div id="uk-news">
   </div>
-  <div id="tabs-2">
-      <div id= "news5"class = "listClass"></div>
-      <div id= "news6"class = "listClass"></div>
-      <div id= "news7"class = "listClass"></div>
-      <div id= "news8"class = "listClass"></div>
-      <div id= "news9"class = "listClass"></div>
+    
+  <div id="football">
   </div>
-  <div id="tabs-3">
-      <div id= "news10"class = "listClass"></div>
-      <div id= "news11"class = "listClass"></div>
-      <div id= "news12"class = "listClass"></div>
-      <div id= "news13"class = "listClass"></div>
-      <div id= "news14"class = "listClass"></div>
+    
+  <div id="travel">
+  </div>
+  
+  <div id="plus">
   </div>
   </div>
+  
+  <script type="text/javascript" src="js/news.js"></script>
 </body>
 </html>
