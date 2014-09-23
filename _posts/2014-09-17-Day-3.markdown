@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Day 3"
+---
+
+After the impossibly steep learning curve that Max has been attempting to climb over the past two days in the world of github we have deided to give him a bit of a break and focus on building the html and CSS. We have been doing this on jsbin. We have found that this is a good environment to build becuse it separates the html, css and a preview of how the website is developing into three columns on one screen. 
+
+Once everyone was happy we transported our content onto jekyll! boom.
+
+![screenshot-day-3](/downloads/screenshot-day-3.png)

@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 2"
+---
+
+The second day began with a lecture from Leo about how to use jekyll and the command line on the nitrous platform. There was alot of new syntax to get our heads around, but once this had been mastered by the group we all started to make progress with the rest of our project.
+
+By the end of the day we were all in agreement that it was pretty cool working on a screen that is not too disimilar to the screens from the matrix. 
+
+![screenshot-day-2](/downloads/screenshot-day-2.png)
+
