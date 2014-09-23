@@ -6,10 +6,15 @@
   
  <title>News</title>
  <title>jQuery UI Tabs - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">-->
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">  <!--Bootstrap CDN-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
   
   <script>
   $(function() {
@@ -20,27 +25,33 @@
 </head>
 <body>
   
-  <div id="tabs">
-    <ul>
-    <li><a href="#uk-news">UK-news</a></li>
-    <li><a href="#football">Football</a></li>
-    <li><a href="#travel">Travel</a></li>
-    <li><a href="#tabs-4">+</a></li>
-  </ul>
- 
+  <div id="tabs" class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4"> 
+      <h1>News</h1>
+        <ul class="nav nav-tabs" role="tablist">                    <!--syntax for Bootstrap-->  
+          <li class="active"><a href="#uk-news">UK-news</a></li>
+          <li><a href="#football">Football</a></li>
+          <li><a href="#travel">Travel</a></li>
+          <li><a href="#tabs-4">+</a></li>
+        </ul>
     
-  <div id="uk-news">
-  </div>
     
-  <div id="football">
-  </div>
+    <div id="uk-news">
+    </div>
     
-  <div id="travel">
-  </div>
+    <div id="football">
+    </div>
+    
+    <div id="travel">
+    </div>
   
-  <div id="plus">
+    <div id="plus">
+    </div>
+      
   </div>
-  </div>
+    
+ </div>
   
   <script type="text/javascript" src="js/news.js"></script>
 </body>
