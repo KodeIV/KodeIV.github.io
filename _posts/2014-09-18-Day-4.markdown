@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 4"
+---
+
+It is now 7pm and we are still here. moral is still high, bar Max, who is still struggling to function Git. We all have faith that he will have it fully fuctioning by the end of the evening!
+
+The rest of us have been focussing on content. Nat has built the about us page, which displays some beutiful mugshots of our lovely faces. Joe has built the project page and is working on the contact page and I have been working on the content (I apologise for any poor grammer/spellings) and the footer. 
+
+The site finally feels like it is coming together, it may even be a possibility that we have a fully functioning site by tomorrow evening. An extra snippet of good news Max has just declared that he has bought it back from the brink! We will all sleep happy with the knowledge that we have the home page successfully online!
+
+![screenshot-day-4](/downloads/screenshot-day-4.png)
