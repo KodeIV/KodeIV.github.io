@@ -6,7 +6,6 @@ $(document).ready(function() {
 $.ajax({
    type: "GET",
    dataType: "jsonp",                                                                                           // necessary AJAX name/values
-   cache: false,
    url: "http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=" + sect,  // the 'sect' parameter is added on to the api link, this specifies a topic
    success: function(data) {
        //window.alert("in ajax" + sect);

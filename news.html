@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<meta http-equiv = "refresh" content = "30"/>-->
+<meta http-equiv = "refresh" content = "60"/>
    <meta charset="utf-8">
   
    <title>News</title>
@@ -17,11 +17,11 @@
    <link rel="stylesheet" href="css/news.css">
 
   
-      <script>
+      <!--<script>
         $(function() {
         $( "#tabs" ).tabs();
         });
-      </script>
+      </script>-->
    
 </head>
   
@@ -38,7 +38,7 @@
       <h1></h1>
         
       <ul class="nav nav-tabs" role="tablist">                    <!--syntax for Bootstrap-->  
-          <li class="active" ><a href="#uk-news"  style="color: #D61D00; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK-news</a>
+          <li><a href="#uk-news"  style="color: #D61D00; font-family: arial,sans-serif;" role="tab" data-toggle="tab">UK-news</a>
         </li>
           <li><a href="#football" style="color: #008000; font-family: arial,sans-serif;" role="tab" data-toggle="tab">Football</a>
         </li>
@@ -79,5 +79,18 @@
   
   
   <script type="text/javascript" src="js/news.js"></script>
+  <script>
+ /* $(document).ready(function() {
+$("#uk-news").click(function() {
+$(this).addClass("active");
+});
+    $("#travel").click(function() {
+$(this).addClass("active");
+});
+    $("#football").click(function() {
+$(this).addClass("active");
+});
+});*/
+  </script>
 </body>
 </html>
