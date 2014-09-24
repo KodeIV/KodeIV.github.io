@@ -51,21 +51,21 @@ h2 {
 #socialmediatfb {
   padding: 160px;
 }
-#cbackgroundimg {
+<!--#cbackgroundimg {
   background-image: url("http://i.imgur.com/VwL8ryV.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
   padding:1px;
-}
-#pbackgroundimg {
+}-->
+<!--#pbackgroundimg {
   background-image: url("http://i.imgur.com/LRAiR5F.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
   padding:1px;
-}
-#abackgroundimg {
+}-->
+<!--#abackgroundimg {
   background-image: url("http://backgroundwallpaper.co/wp-content/uploads/2013/06/hd-wallpapers-3.jpg");
   background-repeat: no-repeat;
   background-attachment: auto;
@@ -73,7 +73,7 @@ h2 {
   padding-bottom:80px;
   height:1000px;
   width:2000;
-}
+}-->
 
 
 
@@ -156,11 +156,5 @@ h2 {
   background-color: black;
   border-radius: 40px;
   
-  
-}
-
-.navlogo {
-  height:120px;
-  width: 80px;
   
 }
