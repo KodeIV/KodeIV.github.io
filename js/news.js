@@ -31,7 +31,7 @@ fillNews ("uk-news");
 fillNews ("football");                                                                                          //
 fillNews ("travel");
 
- /*$("div#tabs").tabs();
+ $("div#tabs").tabs();
 
    $("#plus").click(function() {
 
@@ -42,7 +42,7 @@ fillNews ("travel");
        );
 
        $("div#tabs").tabs("refresh");
-   });*/
+   });
  });
 
 
