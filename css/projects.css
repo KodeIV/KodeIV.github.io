@@ -42,24 +42,24 @@ h2 {
  
 }
 
-#socialmediainsta {
+/*#socialmediainsta {
   padding: 100px;
-}
+}*/
 
-#socialmediatfb {
+/*#socialmediatfb {
   padding: 160px;
   
-}
+}*/
 @media (max-width: 421px){
-  #pbackgroundimg {
+  /*#pbackgroundimg {
     background-size: 100%;
-  }
+  }*/
   #cbackgroundimg {
     background-size: 100%;
   }
-  #abackgroundimg {
+ /* #abackgroundimg {
     background-size: 100%;
-  }
+  }*/
 }
   
 #cbackgroundimg {
@@ -68,7 +68,7 @@ h2 {
   background-attachment: fixed;
   background-position: center; 
   padding:0;
-  height: 2000px;
+  height: auto;
 }
 /*#pbackgroundimg {
   background-image: url("http://i.imgur.com/LRAiR5F.jpg");
