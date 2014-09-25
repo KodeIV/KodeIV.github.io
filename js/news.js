@@ -18,7 +18,7 @@ $.ajax({
        $("#" + sect).append((i+1) + ". " + "<a href='"                                                          //  THIS IS ONE APPEND. 
            + data.response.results[i].webUrl + "'>"                                                             //
            + data.response.results[i].webTitle + "</a><br>"                                                     //
-              + data.response.results[i].fields.trailText.substring(0,160) + "<br><br>"+ "<p></p>");                                        // trail text adds the 'trailing text'
+              + data.response.results[i].fields.trailText.substring(0,146) + "..." + "<br><br>" + "<p></p>");                                        // trail text adds the 'trailing text'
                                                              
            }
        }
@@ -27,21 +27,11 @@ $.ajax({
 };
 
 fillNews ("uk-news");                                                        
-fillNews ("football");                                                                                          //
+fillNews ("football");                                                                                          
 fillNews ("travel");
 
  $("div#tabs").tabs();
 
-   $("#plus").click(function() {
-
-       var num_tabs = $("div#tabs ul li").length;
-
-      $("div#tabs ul").append(
-           "<li><a href='#tab" + num_tabs + "'>#" + num_tabs + "</a></li>"
-       );
-
-       $("div#tabs").tabs("refresh");
-   });
  });
 
 
