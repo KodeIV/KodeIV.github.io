@@ -62,39 +62,23 @@ h2 {
     background-size: 100%;
   }
 }
-<<<<<<< HEAD
   
 #cbackgroundimg {
-=======
-<!--#cbackgroundimg {
->>>>>>> cf2fc6bfdaa0d26b65d65b2b5fe6d12bff2b5508
   background-image: url("http://i.imgur.com/VwL8ryV.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
-<<<<<<< HEAD
   padding:0;
 }
 #pbackgroundimg {
-=======
-  padding:1px;
-}-->
-<!--#pbackgroundimg {
->>>>>>> cf2fc6bfdaa0d26b65d65b2b5fe6d12bff2b5508
   background-image: url("http://i.imgur.com/LRAiR5F.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
-<<<<<<< HEAD
   padding:0;
   padding-bottom:100px;
 }
 #abackgroundimg {
-=======
-  padding:1px;
-}-->
-<!--#abackgroundimg {
->>>>>>> cf2fc6bfdaa0d26b65d65b2b5fe6d12bff2b5508
   background-image: url("http://backgroundwallpaper.co/wp-content/uploads/2013/06/hd-wallpapers-3.jpg");
   background-repeat: no-repeat;
   background-attachment: auto;
@@ -102,7 +86,7 @@ h2 {
   padding-bottom:80px;
   height:1000px;
   width:2000;
-}-->
+}
 
 
 
@@ -178,7 +162,6 @@ h2 {
   
   
 }
-<<<<<<< HEAD
 
 .navlogo {
   height:120px;
@@ -190,5 +173,3 @@ h2 {
 .container-fluid {
   padding:0;
 }
-=======
->>>>>>> cf2fc6bfdaa0d26b65d65b2b5fe6d12bff2b5508
