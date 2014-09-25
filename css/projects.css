@@ -10,13 +10,12 @@
   padding-right: 30px;
   text-align: center;
  
- 
 }
-.projectPictures{
+  
+.projectPictures {
     height:auto;
     width:auto;
     display: inline-block;
-    
     border-radius:25px;
     opacity: 0.4;
     filter: alpha(opacity=40); 
@@ -25,14 +24,14 @@
     opacity: 1.0;
     filter: alpha(opacity=50);
   
-  }
+}
 
 h1 {
   text-align: center;
   font-size: 150px;
   font-family: 'Amatic SC', cursive;
   font-size: 90px;
-  line-height: 1em;
+  line-height: 1em auto;
   color: #20f9c8;
   padding-left: 30px;
   padding-top: 30px;
@@ -41,19 +40,14 @@ h1 {
   
 h2 {
   text-align:relative;
-  color: #FFFFFF;
  
 }
 
 #socialmediainsta {
-  height: auto;
-  width: auto;
   padding: 100px;
 }
 
 #socialmediatfb {
-  height: auto;
-  width: auto;
   padding: 160px;
   
 }
@@ -155,7 +149,7 @@ h2 {
 
 .photo-grid figcaption p {
   color: white;
-	font-size: 1.2em;
+	font-size: 1.2em auto;
 	position: relative;
 	top: 0;
 	width: 100%;
