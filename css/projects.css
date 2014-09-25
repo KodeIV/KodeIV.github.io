@@ -42,33 +42,34 @@ h2 {
  
 }
 
-/*#socialmediainsta {
-  padding: 100px;
-}*/
+#socialmediainsta {
+  padding-top: 100px;
+}
 
 /*#socialmediatfb {
   padding: 160px;
-  
 }*/
+/*
 @media (max-width: 421px){
-  /*#pbackgroundimg {
+  
+ #pbackgroundimg {
     background-size: 100%;
-  }*/
+  }
   #cbackgroundimg {
     background-size: 100%;
   }
- /* #abackgroundimg {
+ #abackgroundimg {
     background-size: 100%;
-  }*/
-}
+  }
+}*/
   
 #cbackgroundimg {
   background-image: url("http://i.imgur.com/VwL8ryV.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
-  padding:0;
-  height: auto;
+  padding:20px;
+  height: 100%;
 }
 /*#pbackgroundimg {
   background-image: url("http://i.imgur.com/LRAiR5F.jpg");
