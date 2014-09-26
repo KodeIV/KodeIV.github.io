@@ -4,7 +4,7 @@
   position: relative;
 	width:auto;
 	height:auto;
-  border: 10px;
+  border: 0;
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
@@ -169,6 +169,10 @@ h2 {
   padding:0 10px;
   
   
+}
+
+#nav{
+  padding-top: 50px;
 }
 
 .navlogo {
