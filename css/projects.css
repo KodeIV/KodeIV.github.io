@@ -181,3 +181,9 @@ h2 {
 .container-fluid {
   padding:0;
 }
+
+.blogimages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
