@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +49,13 @@
         </li>
          
       </ul>
-    
+
+	<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://content.guardianapis.com/search?api-key=test&show-fields=all&order-by=newest&section=news">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+		</form>
+	<div class="tfclear"></div>
+	</div>
       
   <div class="tab-content">
   <div class="tab-pane active" id="uk-news"></div>

@@ -18,7 +18,7 @@ $.ajax({
        $("#" + sect).append((i+1) + ". " + "<a href='"                                                          //  THIS IS ONE APPEND. 
            + data.response.results[i].webUrl + "'>"                                                             //
            + data.response.results[i].webTitle + "</a><br>"                                                     //
-              + data.response.results[i].fields.trailText.substring(0,160) + "<br><br>"+ "<p></p>");                                        // trail text adds the 'trailing text'
+              + data.response.results[i].fields.trailText.substring(0,157) + "..." + "<br><br>"+ "<p></p>");                                        // trail text adds the 'trailing text'
                                                              
            }
        }
@@ -43,6 +43,25 @@ fillNews ("travel");
        $("div#tabs").tabs("refresh");
    });
  });
+
+//clears text when field is clicked
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfheader");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Search our website'){//Customize this text string to whatever you want
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+
+
+
+
+
 
 
  
