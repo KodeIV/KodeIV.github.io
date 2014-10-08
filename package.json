@@ -18,6 +18,8 @@
   "homepage": "https://github.com/KodeIV/KodeIV.github.io",
   "devDependencies": {
     "chai": "^1.9.2",
+    "grunt": "^0.4.5",
+    "grunt-mocha": "^0.4.11",
     "istanbul": "^0.3.2",
     "supertest": "^0.14.0"
   }

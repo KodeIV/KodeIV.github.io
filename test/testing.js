@@ -5,53 +5,59 @@ request = request('http://kodeiv.github.io/');
 
 describe('When a user goes to the index', function() {
 
-    it("should contain the tab link contactus", function(done) {
+    it("Should contain the tab link project4", function(done) {
         request.get('/')
-            .expect(/contactus\.html/, done);
+            .expect(/project4\.html/, done);
     });
 
-    it("should return status code 200 OK", function(done) {
+    it("Should return status code 200 OK", function(done) {
     request.get('/')
         .expect(200, done);
     });
 });
 
-describe('When a user goes to the contact us page', function() {
+describe('When a user goes to the project 4 page', function() {
 
-  it('should return status 200 OK', function(done){
-    request.get('/contactus.html')
+  it('Should return status 200 OK', function(done){
+    request.get('/project4.html')
       .expect(200, done);
   });
 
-  it('should contain a twitter feed', function(done){
-    request.get('/contactus.html')
+  it('Should contain a twitter feed', function(done){
+    request.get('/project4.html')
       .expect(/twitter-timeline/, done);
   });
 
-  it("should only return images in the twitter feed", function(done) {
-        request.get('/contactus.html')
-            .expect(/getElementById/, done);
+  it("Should only return images in the twitter feed", function(done) {
+        request.get('/project4.html')
+            .expect(/twitimg/, done);
   });
 
- it("should contain the hastag FAC3", function(done) {
+ it("Should contain the hastag FAC3", function(done) {
       request.get('/contactus.html')
           .expect(/https:\/\/twitter\.com\/hashtag\/FAC3/, done);
   });
 });
 
-describe('when the user retweets', function() {
+describe('When the user retweets', function() {
 
-    it("should contain #camdenacademy", function(done) {
-        request.get('/contactus.html')
+    it("Should contain #camdenacademy", function(done) {
+        request.get('/project4.html')
             .expect(/camdenacademy/, done);
     });
 
-    it("should contain the tab 'week4'", function(done) {
-        request.get('/')
-            .expect(/week4.html/, done);
+    it('Should open a new window, when user reposts tweet', function(done){
+        expect()
+        .expect(200, done);
+    });
+
+    it('Feed should contain the reposts automatically', function(done){
+    request.get('/')
+      .expect(/News/, done);
     });
 
 });
+
 
 /*the website server calls via an ajax function*/
 describe('The website requests twitter data from the twitter API', function() {
@@ -86,18 +92,3 @@ describe('The website requests twitter data from the twitter API', function() {
         done();
     })
 });
-/*var request4 = require('supertest');
-request4 = request4('http://kodeiv.github.io/news.html');
-
-describe('When a user goes to the news page', function() {
-    it('should return status 200 OK', function(done){
-      request.get('/')
-        .expect(200, done);
-    });
-  it('should contain the tab uk news', function(done){
-    request.get('/')
-      .expect(/News/, done);
-  });
-
-
-});*/
