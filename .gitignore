@@ -1,2 +1,4 @@
 _site
 .sass-cache
+# directories to ignore
+node_modules/
