@@ -1,5 +1,6 @@
-/*module.exports = {
-  function (getcontent){
-    return
-  };
-}*/
+module.exports =
+
+    function(getContent){
+    return {
+    }
+  }
