@@ -3,7 +3,7 @@ var twitterimages = require('./twitimages.js');
 
 var server = http.createServer(function (request, response){
 	twitterimages(function (err, res){
-		console.log(res);
+		response.write(res);
 	})
 })
 
