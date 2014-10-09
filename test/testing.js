@@ -88,7 +88,7 @@ describe('The website requests twitter data from the twitter API', function() {
     })
 
     it('have function called jsonManipulator which manipulates the json object then returns a variable image', function (done){
-        expect(ajax.jsonManipulator().image).to.be.an('imgtwit');
+        expect(ajax.jsonManipulator().image).to.be.an('image');
         done();
     })
 });

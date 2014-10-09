@@ -7,6 +7,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://KodeIV.me" # the base hostname & protocol for your site
 twitter_username: Kode_IV
 github_username:  KodeIV
-
+exclude: [node_modules]
 # Build settings
 markdown: kramdown
