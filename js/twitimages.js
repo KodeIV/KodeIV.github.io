@@ -8,11 +8,11 @@ var T = new Twit({
   access_token_secret: 'psxk2F9aBYhBwj479vwGQTTYGP1Any7ChrHJFOFzfJ2oq'
 });
 
-module.exports = function () {
+module.exports = function (searchfor, callback) {
   
   var origArray = [];
 
-T.get('search/tweets', { q: '#CollectiveAcademy' }, function(err, data, response) {
+T.get('search/tweets', { q: '"' + searchfor + '"' }, function(err, data, response) {
   var mango = data.statuses;
 
     mango.forEach(function(tweet){
@@ -29,6 +29,7 @@ T.get('search/tweets', { q: '#CollectiveAcademy' }, function(err, data, response
         if (err) throw err;
           console.log('It\'s saved!');
       });
+      callback(null, "working")
     }
     });
 });
