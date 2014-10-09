@@ -8,21 +8,21 @@
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
- 
+
 }
-  
+
 .projectPictures {
     height:auto;
     width:auto;
     display: inline-block;
     border-radius:25px;
     opacity: 0.4;
-    filter: alpha(opacity=40); 
+    filter: alpha(opacity=40);
 }
-.projectPictures:hover{      
+.projectPictures:hover{
     opacity: 1.0;
     filter: alpha(opacity=50);
-  
+
 }
 
 h1 {
@@ -31,21 +31,21 @@ h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 90px;
   line-height: 1em auto;
-  color: #FFFFFF;
+  color: #0000FF;
   padding-left: 30px;
   padding-top: 60px;
   position: fixed, center;
   padding-bottom: 0;
 }
-  
+
 h2 {
   text-align:relative;
- 
+
 }
 
 #socialmediainsta {
   padding-top: 100px;
-  
+
 }
 
 .iframe-wrapper {
@@ -58,7 +58,7 @@ h2 {
 }*/
 /*
 @media (max-width: 421px){
-  
+
  #pbackgroundimg {
     background-size: 100%;
   }
@@ -69,20 +69,20 @@ h2 {
     background-size: 100%;
   }
 }*/
-  
+
 #cbackgroundimg {
   background-image: url("http://i.imgur.com/VwL8ryV.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
-  padding:20px;
+  background-position: center;
+  padding:50px;
   height: 100%;
 }
 /*#pbackgroundimg {
   background-image: url("http://i.imgur.com/LRAiR5F.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   padding:0;
   padding-bottom:100px;
 }
@@ -90,7 +90,7 @@ h2 {
   background-image: url("http://backgroundwallpaper.co/wp-content/uploads/2013/06/hd-wallpapers-3.jpg");
   background-repeat: no-repeat;
   background-attachment: auto;
-  background-position: center; 
+  background-position: center;
   padding-bottom:80px;
   height:1000px;
   width:2000;
@@ -107,17 +107,17 @@ h2 {
 	text-align: center;
   border-radius: 40px;
 }
- 
+
 .photo-grid li {
 	display: inline-block;
 	margin: 1em;
 	/*width: 410px;
   height: 380px;*/
   border-radius: 40px;
-  
+
 }
- 
- 
+
+
 .photo-grid figure {
 	overflow: hidden;
 	position: relative;
@@ -125,13 +125,13 @@ h2 {
   height: auto;
   border-radius: 40px;
 
-  
+
 }
 
 .photo-grid li:hover figcaption {
 	opacity: 0.75;
     transition: 1000ms, ease-out;
-  
+
 }
 
 .photo-grid img {
@@ -139,10 +139,10 @@ h2 {
 	width: 100%;
   height: 100%;
   border-radius:40px;
-  
-  
+
+
 }
- 
+
 .photo-grid figcaption {
 
 	width: 100%;
@@ -167,18 +167,18 @@ h2 {
   background-color: black;
   border-radius: 40px;
   padding:0 10px;
-  
-  
+
+
 }
 
 #nav{
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .navlogo {
   height:100px;
   width: 80px;
-  
+
 }
 
 
@@ -189,5 +189,5 @@ h2 {
 .blogimages {
   display: block;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto;
 }

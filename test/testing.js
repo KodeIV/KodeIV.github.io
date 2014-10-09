@@ -47,8 +47,8 @@ describe('When the user retweets', function() {
     });
 
     it('Should open a new window, when user reposts tweet', function(done){
-        expect()
-        .expect(200, done);
+        expect(/)
+        .expect("_blank", done);
     });
 
     it('Feed should contain the reposts automatically', function(done){

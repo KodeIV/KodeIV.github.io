@@ -3,3 +3,4 @@ _site
 # directories to ignore
 node_modules/
 npm-debug.log
+project4.html
