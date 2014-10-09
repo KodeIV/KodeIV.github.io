@@ -46,14 +46,14 @@ describe('When the user retweets', function() {
             .expect(/collectiveacademy/, done);
     });
 
-    /*it('Should open a new window, when user reposts tweet', function(done){
-        .expect(/)
-        .expect("_blank", done);
-    });*/
+    it('Should open a new window, when user reposts tweet', function(done){
+        request.get('/')
+          .expect(/_blank/, done);
+    });
 
     it('Feed should contain the reposts automatically', function(done){
-    request.get('/')
-      .expect(/News/, done);
+      request.get('/')
+        .expect(/News/, done);
     });
 
 });
