@@ -1,12 +1,12 @@
 var http = require('http');
-var twitterimages = require('./twitimages.js');
+var twitterimages = require('./js/twitimages.js');
 var fs = require('fs');
 
 
 var server = http.createServer(function (request, response){
 	
-	twitterimages(function (err, res){
-		response.write(res);
+	twitterimages('collectiveAcademy',function (err, res){
+		console.log(res);
 
 		fs.readFile(array.json, function(err, data){
 			response.writeHead(200, {"Content-Type": "text/json", "Access-Control-Allow-Origin":"*"});
@@ -15,4 +15,4 @@ var server = http.createServer(function (request, response){
 	})
 })
 
-server.listen(process.env.PORT );
+server.listen(8080);
