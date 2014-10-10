@@ -21,19 +21,20 @@
 
 .nav a {
     color:#5a5a5a;
-    font-size:14px;
+    font-size:35px;
     font-weight:bold;
     padding-top:14px;
     padding-bottom:150px;
     padding-left:10px;
     padding-right:10px;
     text-transform:uppercase;
+    font-family: 'Amatic SC', cursive;
   
     }
 
 .jumbotron {
   height:650px;
-  background-image:url('http://s28.postimg.org/pvsan8r99/IMG_1184.jpg');
+  background-image:url(/images/brick.jpg);
  /* // http://i.imgur.com/NkfWoHB.jpg (joes wolf pic) */
   
   background-repeat: no-repeat;
@@ -45,12 +46,13 @@
 .jumbotron h1{
   color: #FFFFFF;
   font-weight:bold;
-  font-size:60px;
+  font-size: 100px;
+  font-family: 'Amatic SC', cursive;
   
 }
 .jumbotron p{
-  font-size:24px;
-  
+  font-size:40px;
+  font-family: 'Amatic SC', cursive;
   
 }
 
