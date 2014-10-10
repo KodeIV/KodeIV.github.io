@@ -34,7 +34,7 @@
 
 .jumbotron {
   height:650px;
-  background-image:url(/images/brick.jpg);
+  background-color: black;
  /* // http://i.imgur.com/NkfWoHB.jpg (joes wolf pic) */
   
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@
   
 }
 .jumbotron p{
-  font-size:40px;
+  font-size:36px;
   font-family: 'Amatic SC', cursive;
   
 }

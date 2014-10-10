@@ -200,7 +200,10 @@ font-family: 'Amatic SC', cursive;
 }
 
 
- 
+ .hashtag {
+  color: #598ab6;
+ }
+
 .twitcaption1 {
     
     margin-bottom: 15px;
@@ -209,6 +212,7 @@ font-family: 'Amatic SC', cursive;
     color: #b52f5a;
     position: absolute;
     bottom: 0;
+    padding-left: 10px;
 
 } 
 .twitcaption1 p {
@@ -221,6 +225,8 @@ font-family: 'Amatic SC', cursive;
     display: block;
     color: #598ab6;
     position: absolute;
+    bottom: 0;
+    padding-left: 10px;
 }
 
 .twitcaption3 {
@@ -229,6 +235,12 @@ font-family: 'Amatic SC', cursive;
     display: block;
     color: #92ba9d;
     position: absolute;
+    bottom: 0;
+    padding-left: 10px;
   }
 
 
+/*NewsPage font size*/
+.guardiantext a{
+font-size: 15px;
+}
