@@ -8,4 +8,3 @@
 	    svg.append("path").attr("class", "country").attr("d", path(countries[i]));
 	   }
   });
-    
