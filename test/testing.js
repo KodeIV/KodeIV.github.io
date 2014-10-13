@@ -90,7 +90,7 @@ describe('When a user goes to the projects page', function() {
             .expect(/<a href="\/2014\/09\/20\/week-recap\.html/, done);
     });
 
-    it("Should Contain Link week recap image", function(done) {
+    it("Should Contain week recap image", function(done) {
         kodeivrequest.get('/projects.html')
             .expect(/<img src="https:\/\/scontent-a-ams\.xx\.fbcdn\.net\/hphotos-xpa1\/v\/t1\.0-9\/10620684_1481825625434948_3316936839365310590_n\.jpg\?oh=458df5cfa7f68218af6520abfeab0d3b&oe=54D0EB53"/, done);
     });
