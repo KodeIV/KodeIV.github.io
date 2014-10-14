@@ -3,9 +3,8 @@
 /*text CSS*/
 h1 {
   text-align: center;
-  font-size: 150px;
+  font-size: 120px;
   font-family: 'Amatic SC', cursive;
-  font-size: 90px;
   line-height: 1em auto;
   color: #0000FF;
   padding-left: 30px;
@@ -19,6 +18,10 @@ h2 {
   padding-top: 50px;
 }
 
+.homepage1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 120px;
+}
 /*Navbar CSS*/
 
 #nav{
@@ -134,9 +137,6 @@ h2 {
 
 }
 
-.inserttweets {
-
-}
 
 /*News page CSS*/
 .guardian img {
@@ -166,24 +166,6 @@ img {
 }
 
 
-/*
-#socialmediatfb {
-  padding: 160px;
-}*/
-/*
-@media (max-width: 421px){
-
- #pbackgroundimg {
-    background-size: 100%;
-  }
-  #cbackgroundimg {
-    background-size: 100%;
-  }
- #abackgroundimg {
-    background-size: 100%;
-  }
-}*/
-
 /*these are background page's css*/
 
 #cbackgroundimg {
@@ -195,31 +177,70 @@ img {
   height: 100%;
 }
 
-/*#pbackgroundimg {
-  background-image: url("http://i.imgur.com/LRAiR5F.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  padding:0;
-  padding-bottom:100px;
-}
-#abackgroundimg {
-  background-image: url("http://backgroundwallpaper.co/wp-content/uploads/2013/06/hd-wallpapers-3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: auto;
-  background-position: center;
-  padding-bottom:80px;
-  height:1000px;
-  width:2000;
-}
-
-
-
-}*/
 
 /*blog posts css*/
 .blogimages {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*TWITTER API PAGE*/
+
+#twitterapi {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1000;
+}
+
+
+
+.inserttweets {
+font-family: 'Amatic SC', cursive;
+
+}
+
+
+ .hashtag {
+  color: #598ab6;
+ }
+
+.twitcaption1 {
+    
+    margin-bottom: 15px;
+    margin-top: 320px;
+    display: block;
+    color: #b52f5a;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+
+} 
+.twitcaption1 p {
+  margin-top: :320px;
+}
+
+.twitcaption2 {
+
+    margin-bottom: 15px;
+    display: block;
+    color: #598ab6;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+}
+
+.twitcaption3 {
+
+    margin-bottom: 15px;
+    display: block;
+    color: #92ba9d;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+  }
+
+
+/*NewsPage font size*/
+.guardiantext a{
+font-size: 15px;
 }

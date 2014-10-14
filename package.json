@@ -22,6 +22,7 @@
     "grunt-mocha": "^0.4.11",
     "istanbul": "^0.3.2",
     "supertest": "^0.14.0",
+    "topojson": "^1.6.18",
     "twit": "^1.1.18"
   },
   "dependencies": {
