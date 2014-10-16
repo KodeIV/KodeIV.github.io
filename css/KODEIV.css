@@ -16,21 +16,47 @@ h1 {
 h2 {
   text-align:relative;
   padding-top: 50px;
+  padding-bottom: 15px;
 }
 
+a{
+  padding-bottom: 15px;
+}
 .homepage1 {
   font-family: 'Amatic SC', cursive;
   font-size: 120px;
 }
+
+/* unvisited link */
+a:link {
+  color: #3399FF;
+}
+
+/* visited link */
+a:visited {
+  color: #3399FF;
+}
+
+/* mouse over link */
+a:hover {
+  color: #92ba9d;
+}
+
+/* selected link */
+a:active {
+  color: #3399FF;
+}
+
 /*Navbar CSS*/
 
 #nav{
   padding-top: 30px;
+  height: 60px;
 }
 
 .navlogo {
-  height:100px;
-  width: 80px;
+  height:80px;
+  width: 60px;
 }
 
 }
@@ -93,6 +119,7 @@ h2 {
   border-radius: 40px;
   top: 0;
   *z-index: 200;
+  width: 243px;
 }
 
 .photo-grid figcaption p {
@@ -100,7 +127,7 @@ h2 {
   font-size: 1.2em auto;
   position: relative;
   top: 0;
-  width: 100%;
+  width: 243px;
   height: 100%;
   text-align: center;
   vertical-align: center;
@@ -247,8 +274,38 @@ font-size: 15px;
 
 /*D3 Map*/
 #map {
-  padding-top: 100px;
-  background-color: #3399FF;
-  margin-bottom: 0px;
-  height: auto;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 360px;
+  fill: #FFFFFF;
+  stroke: #8aae93 ;
+  stroke-width: 1px;
+/*0033668*/  background-color: #568bb8;
+  stroke-linejoin: round;
+  border-style: solid;
+  border-width: 5px;
+  height:650px;
+
+}
+#BR  { fill: #580000 ; }
+RU path { fill: #cdd; }
+["world.geo"].CA path { fill: #cdc; }
+["world.geo"].ZA path { fill: #dcd; }
+
+.btn-primary{
+  margin-top:40px;
+  margin-left: 350px;
+  text-align:center;
+  width:270px;
+  background-color: #f89d61;
+
+}
+
+.btn-danger{
+  margin-top:40px;
+  margin-left: 10px;
+  margin-right: 350px;
+  width:270px;
+  background-color:#bc365e ;
 }

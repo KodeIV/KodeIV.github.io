@@ -1,0 +1,49 @@
+---
+layout: page
+---
+ <body>
+
+   <button type="button" class="btn btn-primary btn-lg pull-center">Retail</button>
+   <button type="button" class="btn btn-danger btn-lg pull-right">Wholesale</button>
+
+   <div id="map"></div>
+
+
+   <script>
+     var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
+     var projection = d3.geo.robinson().translate([500, 250]);
+     var path = d3.geo.path().projection(projection);
+
+     var world, cocaine;
+
+     function cocaineMap(){
+
+         var countries = topojson.feature(world, world.objects
+           ["world.geo"]).features;
+
+         for (var i=0; i<countries.length; i++) {
+
+         svg.append("path").attr("id", countries[i].id).attr("d", path(countries[i]))
+
+
+         };
+     };
+
+     d3.json("/js/world.json", function(loadWorld) {
+         world = loadWorld;
+         if (typeof cocaine !== "undefined") cocaineMap();
+     });
+
+
+     d3.json("/js/cocaine.json", function(loadData){
+           cocaine = loadData;
+           if(typeof world !== "undefined") cocaineMap();
+     });
+
+
+
+
+   </script>
+
+
+ </body>
