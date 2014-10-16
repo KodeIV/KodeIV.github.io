@@ -307,5 +307,6 @@ RU path { fill: #cdd; }
   margin-left: 10px;
   margin-right: 350px;
   width:270px;
-  background-color:#bc365e ;
+  background-color:#bc365e;
+  border-color: #568bb8;
 }
