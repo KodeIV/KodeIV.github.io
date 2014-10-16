@@ -24,25 +24,17 @@
 
       function cocaineMap(){
           
-          var weLoveCoke = {};
+           var cokeObj = {};
+                for (i=0; i < cocaine.length; i++){
+                          cokeObj[i] = cocaine[i];        
+                } 
 
-          for (var j=0 ; j< cocaine.length; j++){
-            
-            var data = cocaine[j];
-            var alpha2 = data["Alpha-2"];
-            var countryName = data["Country name"];
-            var retailPrice = data["Retail price"];
-            var wholesalePrice = data["Wholesale price"];
-
-              weLoveCoke[alpha2] = [retailPrice, wholesalePrice, countryName];
-              
-          }
+            //pulls price data from each country object within cokeObj
+            Object.keys(cokeObj).forEach (function(key){
+                console.log (cokeObj[key]["Alpha-2"]);
+                console.log(cokeObj[key]["Retail price"]);
+      });
           
-          console.log(weLoveCoke);
-          /*Object.keys(weLoveCoke).forEach (function(weLoveCoke){
-            var retail = weLoveCoke[0]
-            console.log(retail)
-          })*/
 
           var countries = topojson.feature(world, world.objects["world.geo"]).features;
 
