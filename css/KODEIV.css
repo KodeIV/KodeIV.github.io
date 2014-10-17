@@ -272,7 +272,7 @@ font-size: 15px;
 
 /*D3 Map*/
 #map {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 360px;
@@ -284,19 +284,6 @@ font-size: 15px;
   border-width: 5px;
   height:650px;
 }
-
-.BR { fill: #580000 ; }
-.CA:hover {
-  opacity: 1.0;
-  background-color:#f89d61;
-  border-width: 5px;
-  box-shadow: 10px 10px 5px #888888;
-  margin-bottom: 0;
-  border-color: #357ebd;
-}
-RU path { fill: #cdd; }
-["world.geo"].CA path { fill: #cdc; }
-["world.geo"].ZA path { fill: #dcd; }
 
 .btn-primary{
   margin-top:40px;
@@ -313,6 +300,7 @@ RU path { fill: #cdd; }
     box-shadow: 10px 10px 5px #888888;
     margin-bottom: 0;
     border-color: #357ebd;
+    margin-bottom:-10px;
 }
 
 .btn-primary:active{
@@ -338,7 +326,7 @@ RU path { fill: #cdd; }
     border-width: 5px;
     box-shadow: 10px 10px 5px #888888;
     border-color: #357ebd;
-
+    margin-bottom: -10px;
 }
 
 .btn-danger:active{
