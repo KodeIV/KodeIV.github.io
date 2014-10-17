@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Minimal map</title>
-    <link type ="text/css" rel="stylesheet" href= "/css/map.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.9/d3.geo.projection.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
-    <style>
-      
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
+ <head>
+   <meta charset="utf-8">
+   <title>Minimal map</title>
+     <link type ="text/css" rel="stylesheet" href= "/css/map.css" />
+     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.9/d3.geo.projection.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+ </head>
+ 
+ <body>
+     <h1>Global Cocaine Prices</h1>
+     <button id="retailButton" class="btn">Retail prices</button>
+     <button id="wholesaleButton" class="btn">Wholesale prices</button>
+     <div id="map"></div>
 
-    <script>
+ <script>
 
-      var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
-      var projection = d3.geo.robinson().translate([500, 250]);
-      var path = d3.geo.path().projection(projection);
+     var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
+     var projection = d3.geo.robinson().translate([500, 250]);
+     var path = d3.geo.path().projection(projection);
 
-      var world, cocaine;
+     var colorRetail = d3.scale.linear()
+         .domain([0, 1333])
+         .range(["#f9eded ", "#ff0000 "])
 
-      function cocaineMap(){
-          
-          var weLoveCoke = {};
+     var colorWholesale = d3.scale.linear()
+         .domain([0, 100000])
+         .range(["e4e3f7", "#1500ff "])
 
-          for (var j=0 ; j< cocaine.length; j++){
-            
-            var data = cocaine[j];
-            var alpha2 = data["Alpha-2"];
-            var countryName = data["Country name"];
-            var retailPrice = data["Retail price"];
-            var wholesalePrice = data["Wholesale price"];
+     //var retailArray = [];
+     //var wholesaleArray = [];
+     var world, cocaine;
 
-              weLoveCoke[alpha2] = [retailPrice, wholesalePrice, countryName];
-              
-          }
-          
-          console.log(weLoveCoke);
-          /*Object.keys(weLoveCoke).forEach (function(weLoveCoke){
-            var retail = weLoveCoke[0]
-            console.log(retail)
-          })*/
+ 
 
-          var countries = topojson.feature(world, world.objects["world.geo"]).features;
+ function cocaineMap(){         
+          var cokeObj = {};
+               for (i=0; i < cocaine.length; i++){
+                     var datum = cocaine[i];        
+                     var code = datum["Alpha-2"];
+                     var retail = datum["Retail price"];
+                     var wholesale = datum["Wholesale price"];
+                     var name = datum["Country name"];
 
-          for (var i=0; i<countries.length; i++) {
+                     cokeObj[code] = {
+                       retail: retail, 
+                       wholesale: wholesale,
+                       name: name
 
-
-          svg.append("path").attr("fill","grey").attr("id", countries[i].id).attr("d", path(countries[i]))
-
-          };
-      };
+                     }
+    
+               };
 
 
-      
-      d3.json("/world.topo.json", function(loadWorld) {
-          world = loadWorld;
-          if (typeof cocaine !== undefined){ 
-            cocaineMap();
-          }
-      });
-        
+           function fillColor(id){
 
-      d3.csv("/cocaine.csv", function(loadData){
-            cocaine = loadData;
-            console.log(cocaine);
-            if(typeof world !== undefined) {
-              cocaineMap();
-            }  
-      });
-        
-    </script>
+               var prices = cokeObj[id];
 
-  </body>
+                 if (typeof prices === "undefined"){
+                     return "grey"
+                 }
+
+                 if (typeof prices !== "undefined"){
+                   //console.log(prices);
+                     return colorRetail(cokeObj[id].retail*70);
+                 }
+           };
+
+
+            var countries = topojson.feature(world, world.objects["world.geo"]).features;             
+           for (var i=0; i<countries.length; i++) {
+                 svg.append("path")
+                 //.data(cokeObj
+                 .attr("id", countries[i].id)
+                 .attr("d", path(countries[i]))
+                 .attr("fill", fillColor(countries[i].id))
+           };
+
+       document.getElementsByClassName("btn").forEach(function(btn){
+       btn.addEventListener("click", function(){
+           countries.forEach(function(country){
+             d3.select(#).
+
+           })
+       }, false)
+     })
+
+ };
+
+
+     d3.json("/world.topo.json", function(loadWorld) {
+         world = loadWorld;
+         if (typeof cocaine !== "undefined"){ 
+           cocaineMap();
+         }
+     });
+       
+
+     d3.csv("/cocaine.csv", function(loadData){
+         cocaine = loadData;
+         if(typeof world !== "undefined") {
+           cocaineMap();
+         }  
+     });
+       
+   </script>
+
+ </body>
 </html>
