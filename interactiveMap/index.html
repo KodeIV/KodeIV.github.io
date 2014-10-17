@@ -7,6 +7,7 @@
      <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/d3-geo-projection/0.2.9/d3.geo.projection.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  </head>
  
  <body>
@@ -16,6 +17,23 @@
      <div id="map"></div>
 
  <script>
+          var world, cocaine;
+          var selector = "retail"
+
+        // document.addEventListener('DOMcontentLoaded', function(){
+       
+        $("#retailButton").on("click", function(){
+            selector = "retail";
+            
+            cocaineMap();
+         })
+
+         $("#wholesaleButton").on("click", function(){
+            selector = "wholesale";
+            
+            cocaineMap();
+         })
+    // })
 
      var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
      var projection = d3.geo.robinson().translate([500, 250]);
@@ -23,17 +41,20 @@
 
      var colorRetail = d3.scale.linear()
          .domain([0, 1333])
-         .range(["#f9eded ", "#ff0000 "])
+         .range(["#f9eded", "#ff0000"])
 
      var colorWholesale = d3.scale.linear()
          .domain([0, 100000])
-         .range(["e4e3f7", "#1500ff "])
+         .range(["#e4e3f7", "#1500ff"])
 
      //var retailArray = [];
      //var wholesaleArray = [];
-     var world, cocaine;
+     
 
  
+ 
+ 
+
 
  function cocaineMap(){         
           var cokeObj = {};
@@ -53,20 +74,30 @@
     
                };
 
-
-           function fillColor(id){
+ function fillColor(id){
 
                var prices = cokeObj[id];
 
                  if (typeof prices === "undefined"){
+                     
                      return "grey"
                  }
 
-                 if (typeof prices !== "undefined"){
+                 if ( typeof prices !== "undefined" && selector === "retail"){
                    //console.log(prices);
-                     return colorRetail(cokeObj[id].retail*70);
+                   console.log(colorRetail(prices.retail))
+                     return colorRetail(prices.retail*70);
+                     
+                 }
+
+                if ( selector === "wholesale"){
+                   //console.log(prices);
+                     return colorWholesale(cokeObj[id].wholesale*70);
                  }
            };
+
+
+         
 
 
             var countries = topojson.feature(world, world.objects["world.geo"]).features;             
@@ -77,17 +108,11 @@
                  .attr("d", path(countries[i]))
                  .attr("fill", fillColor(countries[i].id))
            };
-
-       document.getElementsByClassName("btn").forEach(function(btn){
-       btn.addEventListener("click", function(){
-           countries.forEach(function(country){
-             d3.select(#).
-
-           })
-       }, false)
-     })
+    
 
  };
+
+     
 
 
      d3.json("/world.topo.json", function(loadWorld) {
