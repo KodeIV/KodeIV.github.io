@@ -1,0 +1,11 @@
+/*News page CSS*/
+.guardian img {
+  border: white;
+  float: none;
+}
+
+img {
+  float: left;
+  padding-top: 5px;
+  padding-right: 15px;
+}

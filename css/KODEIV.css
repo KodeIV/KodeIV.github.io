@@ -6,11 +6,12 @@ h1 {
   font-size: 120px;
   font-family: 'Amatic SC', cursive;
   line-height: 1em auto;
-  color: #0000FF;
+  color: #598ab6;
   padding-left: 30px;
   padding-top: 50px;
   position: fixed, center;
   padding-bottom: 0;
+
 }
 
 h2 {
@@ -18,7 +19,19 @@ h2 {
   padding-top: 50px;
   padding-bottom: 15px;
 }
+h3 {
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Amatic SC', cursive;
+    line-height: 1em auto;
+    color: #92ba9d;
+    padding-left: 30px;
+    padding-top: 50px;
+    position: fixed, center;
+    padding-bottom: 0;
+    width: auto;
 
+}
 a{
   padding-bottom: 15px;
 }
@@ -72,6 +85,7 @@ a:active {
   height: 100%;
   text-align: center;
   border-radius: 40px;
+  display: block;
 }
 
 .photo-grid li {
@@ -105,8 +119,6 @@ a:active {
   width: 100%;
   height: 100%;
   border-radius:40px;
-
-
 }
 
 .photo-grid figcaption {
@@ -127,7 +139,7 @@ a:active {
   font-size: 1.2em auto;
   position: relative;
   top: 0;
-  width: 243px;
+  width: 258px;
   height: 100%;
   text-align: center;
   vertical-align: center;
@@ -165,17 +177,6 @@ a:active {
 }
 
 
-/*News page CSS*/
-.guardian img {
-  border: white;
-  float: none;
-}
-
-img {
-  float: left;
-  padding-top: 5px;
-  padding-right: 15px;
-}
 .LYN {
   float: none;
 }
@@ -219,17 +220,14 @@ img {
     font-size: 1000;
 }
 
-
-
 .inserttweets {
 font-family: 'Amatic SC', cursive;
 
 }
 
-
- .hashtag {
+.hashtag {
   color: #598ab6;
- }
+}
 
 .twitcaption1 {
 
@@ -287,7 +285,15 @@ font-size: 15px;
   height:650px;
 }
 
-.BR  { fill: #580000 ; }
+.BR { fill: #580000 ; }
+.CA:hover {
+  opacity: 1.0;
+  background-color:#f89d61;
+  border-width: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 0;
+  border-color: #357ebd;
+}
 RU path { fill: #cdd; }
 ["world.geo"].CA path { fill: #cdc; }
 ["world.geo"].ZA path { fill: #dcd; }
@@ -308,6 +314,14 @@ RU path { fill: #cdd; }
     margin-bottom: 0;
     border-color: #357ebd;
 }
+
+.btn-primary:active{
+  background-color:#f89d61;
+}
+.btn-primary:focus{
+  background-color:#f89d61;
+}
+
 .btn-danger{
   margin-top:40px;
   margin-left: 10px;
@@ -324,4 +338,13 @@ RU path { fill: #cdd; }
     border-width: 5px;
     box-shadow: 10px 10px 5px #888888;
     border-color: #357ebd;
+
+}
+
+.btn-danger:active{
+  background-color:#bc365e;
+}
+
+.btn-danger:focus {
+  background-color:#bc365e;
 }

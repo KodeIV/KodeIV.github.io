@@ -2,7 +2,7 @@
 layout: page
 ---
  <body>
-
+   <h3>Global Cocaine Prices</h3>
    <button type="button" class="btn btn-primary btn-lg pull-center">Retail</button>
    <button type="button" class="btn btn-danger btn-lg pull-center">Wholesale</button>
 
@@ -10,6 +10,104 @@ layout: page
 
 
    <script>
+
+       var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
+       var projection = d3.geo.robinson().translate([500, 250]);
+       var path = d3.geo.path().projection(projection);
+
+       var colorRetail = d3.scale.linear()
+           .domain([0, 1333])
+           .range(["#FF9900", "#f89d61"])
+
+       var colorWholesale = d3.scale.linear()
+           .domain([0, 100000])
+           .range(["#996699", "#bc365e"])
+
+       //var retailArray = [];
+       //var wholesaleArray = [];
+       var world, cocaine;
+
+
+
+   function cocaineMap(){
+            var cokeObj = {};
+                 for (i=0; i < cocaine.length; i++){
+                       var datum = cocaine[i];
+                       var code = datum["Alpha-2"];
+                       var retail = datum["Retail price"];
+                       var wholesale = datum["Wholesale price"];
+                       var name = datum["Country name"];
+
+                       cokeObj[code] = {
+                         retail: retail,
+                         wholesale: wholesale,
+                         name: name
+
+                       }
+
+                 };
+
+
+             function fillColor(id){
+
+                 var prices = cokeObj[id];
+
+                   if (typeof prices === "undefined"){
+                       return "#E0E0E0"
+                   }
+
+                   if (typeof prices !== "undefined"){
+                     //console.log(prices);
+                       return colorRetail(cokeObj[id].retail*70);
+                   }
+             };
+
+
+
+              var countries = topojson.feature(world, world.objects["world.geo"]).features;
+             for (var i=0; i<countries.length; i++) {
+                   svg.append("path")
+                   //.data(cokeObj
+                   .attr("id", countries[i].id)
+                   .attr("d", path(countries[i]))
+                   .attr("fill", fillColor(countries[i].id))
+             };
+
+         document.getElementsByClassName(".btn").forEach(function(btn){
+         btn.addEventListener("click", function(){
+             countries.forEach(function(country){
+               //d3.select(#).
+
+
+             })
+         }, false)
+       })
+
+   };
+
+
+       d3.json("/js/world.json", function(loadWorld) {
+           world = loadWorld;
+           if (typeof cocaine !== "undefined"){
+             cocaineMap();
+           }
+       });
+
+
+       d3.json("/js/cocaine.json", function(loadData){
+           cocaine = loadData;
+           if(typeof world !== "undefined") {
+             cocaineMap();
+           }
+       });
+
+  
+
+     </script>
+
+ </body>
+
+   <!--<script>
    //SVG simiar to a DIV - its a <tag> its used to define shapes using path elements
    //Think about it as a canvas, each point/co-ordinate in this case creating a map.
      var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
@@ -67,7 +165,7 @@ layout: page
     }
       //data fetch and processing
 
-    var prData = [];
+  /*  var prData = [];
     minRetailPrice = 100000,
     maxRetailPrice = 0,
     minWholesalePrice = 100000,
@@ -76,9 +174,8 @@ layout: page
     var dataArray = [20, 40, 50, 60];
     var cokeData = d3.scale.linear()
       .domain([minRetailPrice, maxRetailPrice])
-      .range(["#a6fcd1 ", "#00773d "])
+      .range(["#a6fcd1 ", "#00773d "])*/
 
 
 
-   </script>
- </body>
+   </script>-->
