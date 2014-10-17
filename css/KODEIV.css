@@ -274,21 +274,20 @@ font-size: 15px;
 
 /*D3 Map*/
 #map {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 360px;
-  fill: #FFFFFF;
   stroke: #8aae93 ;
   stroke-width: 1px;
 /*0033668*/  background-color: #568bb8;
   stroke-linejoin: round;
-  border-style: solid;
+  border-style: solid   #0033668;
   border-width: 5px;
   height:650px;
-
 }
-#BR  { fill: #580000 ; }
+
+.BR  { fill: #580000 ; }
 RU path { fill: #cdd; }
 ["world.geo"].CA path { fill: #cdc; }
 ["world.geo"].ZA path { fill: #dcd; }
@@ -299,9 +298,16 @@ RU path { fill: #cdd; }
   text-align:center;
   width:270px;
   background-color: #f89d61;
-
+  opacity: 0.8;
 }
-
+.btn-primary:hover{
+		opacity: 1.0;
+    background-color:#f89d61;
+    border-width: 5px;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 0;
+    border-color: #357ebd;
+}
 .btn-danger{
   margin-top:40px;
   margin-left: 10px;
@@ -309,4 +315,13 @@ RU path { fill: #cdd; }
   width:270px;
   background-color:#bc365e;
   border-color: #568bb8;
+  opacity: 0.8;
+}
+
+.btn-danger:hover{
+    opacity: 1.0;
+    background-color:#bc365e;
+    border-width: 5px;
+    box-shadow: 10px 10px 5px #888888;
+    border-color: #357ebd;
 }
