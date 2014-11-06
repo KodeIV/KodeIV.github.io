@@ -72,7 +72,7 @@ a:active {
   width: 60px;
 }
 
-}
+
 
 .container-fluid {
   padding:0;
@@ -276,11 +276,11 @@ font-size: 15px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 360px;
-  stroke: #8aae93 ;
+  stroke: #8aae93;
   stroke-width: 1px;
 /*0033668*/  background-color: #568bb8;
   stroke-linejoin: round;
-  border-style: solid   #0033668;
+  /*border-style: solid   #0033668;*/
   border-width: 5px;
   height:650px;
 }

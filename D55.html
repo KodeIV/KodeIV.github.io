@@ -35,11 +35,11 @@ layout: page
 
     var colorRetail = d3.scale.linear()
         .domain([10, 1200])
-        .range(["#f89d61","#cc3300"]);
+        .range.fill(["#f89d61","#cc3300"]);
 
     var colorWholesale = d3.scale.linear()
         .domain([10, 200000])
-        .range(["#cc3366","#660033"]);
+        .range.fill(["#cc3366","#660033"]);
 
     //var retailArray = [];
     //var wholesaleArray = [];
@@ -73,18 +73,21 @@ function fillColor(id){
       var prices = cokeObj[id];
 
             if (typeof prices == "undifined"){
-              return ("fill", "#F8F8F8");
+              return fill ("#F8F8F8")
             }
             if ( prices && selector === "retail"){
+              console.log(retail)
               return colorRetail(prices.retail*50);
 
             }
 
            if ( prices && selector === "wholesale"){
+            console.log("wholesale")
                return colorWholesale(prices.wholesale*50);
             }
             if ( prices === null){
-             return ("fill", "#F8F8F8");
+            console.log(null)
+              return fill ("#F8F8F8");
             }
           }
 
@@ -95,7 +98,6 @@ function fillColor(id){
               .attr("id", countries[i].id)
               .attr("d", path(countries[i]))
               .attr("fill", fillColor(countries[i].id));
-
         }
 }
 
@@ -107,7 +109,7 @@ function fillColor(id){
       });
 
 
-      d3.csv("/js/cocaine-per-gram.csv", function(loadData){
+      d3.json("/interactiveMap/cocaine.json", function(loadData){
           cocaine = loadData;
           if(typeof world !== "undefined") {
             cocaineMap();
