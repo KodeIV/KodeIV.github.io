@@ -13,11 +13,11 @@
 
 }
 
-<!-- #navimg {
+#navimg {
   height: 75px;
   width: 75px;
 
-}-->
+}
 
 .nav a {
     color:#5a5a5a;
@@ -34,7 +34,7 @@
 
 .jumbotron {
   height:650px;
-  background-color: black;
+  background-color: #10313c;
  /* // http://i.imgur.com/NkfWoHB.jpg (joes wolf pic) */
 
   background-repeat: no-repeat;
