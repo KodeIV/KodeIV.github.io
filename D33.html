@@ -2,13 +2,15 @@
 layout: page
 ---
  <body>
+ <div id="D3background"  style= "padding-bottom: 15px;">
    <h3>Global Cocaine Prices</h3>
+
    <button type="button" class="btn btn-primary btn-lg pull-center" id="retailButton">Retail</button>
    <button type="button" class="btn btn-danger btn-lg pull-center" id="wholesaleButton">Wholesale</button>
 
    <div id="map"></div>
 
-
+</div>
    <script>
 
          var world, cocaine;
@@ -89,7 +91,7 @@ function fillColor(id){
            if ( prices && selector === "wholesale"){
                return colorWholesale(prices.wholesale*3);
             }
-           
+
           }
 
       var countries = topojson.feature(world, world.objects["world.geo"]).features;
@@ -118,6 +120,7 @@ function fillColor(id){
           }
       });
   </script>
+
 </body>
 
    <!--<script>
