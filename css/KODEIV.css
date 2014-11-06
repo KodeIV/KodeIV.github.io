@@ -57,7 +57,7 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: #bc365e;
+  color: #3399FF;
 }
 
 /*Navbar CSS*/
@@ -166,7 +166,7 @@ a:active {
     height:auto;
     width:auto;
     display: inline-block;
-    border-radius:25px;
+    border-radius:15px;
     opacity: 0.8;
     filter: alpha(opacity=40);
 }
