@@ -327,11 +327,12 @@ font-size: 15px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 360px;
-  stroke: #8aae93;
+  stroke: #10313c;
   stroke-width: 1px;
-/*0033668*/  background-color: #568bb8;
+  background-color: #568bb8;
   stroke-linejoin: round;
-  border-width: 5px;
+  border: solid #8aae93;
+  border-width: 2px;
   height:650px;
   padding-bottom: 30px;
 }
