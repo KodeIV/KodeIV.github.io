@@ -151,6 +151,21 @@ a:active {
 }
 
 /*Project Page CSS*/
+.PH1 {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Amatic SC', cursive;
+  line-height: 1em auto;
+  color: #ffa46f;
+  padding-left: 30px;
+  padding-top: 50px;
+  position: fixed, center;
+  padding-bottom: 0;
+}
+
+/*.HUD {
+  height:473px;
+}*/
 
 #projectDays {
   position: relative;
@@ -164,8 +179,8 @@ a:active {
 }
 
 .projectPictures {
-    height:auto;
-    width:auto;
+    height: auto;
+    width: auto;
     display: inline-block;
     border-radius:15px;
     opacity: 0.8;
@@ -203,6 +218,14 @@ a:active {
 
 #cbackgroundimg {
   background-color: #327389;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding:50px;
+  height: 100%;
+}
+#pbackgroundimg {
+  background-color: #449bb5;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
