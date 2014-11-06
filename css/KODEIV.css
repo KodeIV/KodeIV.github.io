@@ -3,7 +3,7 @@
 /*text CSS*/
 h1 {
   text-align: center;
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'Amatic SC', cursive;
   line-height: 1em auto;
   color: #598ab6;
@@ -210,6 +210,11 @@ a:active {
   background-color: #333333;
 }
 
+#contact-us-title {
+  font-size: 52px;
+  color: white;
+  padding-bottom: 40px;
+}
 
 /*blog posts css*/
 .blogimages {
@@ -340,4 +345,30 @@ font-size: 15px;
 
 .btn-danger:focus {
   background-color:#bc365e;
+}
+
+//footer
+
+.footer-row img {
+  padding-bottom: 100px;
+}
+
+.footer-wrapper {
+  height: 150px;
+}
+
+.footer-heading{
+  padding-left: 153px;
+  padding-top: 0px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}
+
+
+.icon {
+  float: left;
+  padding-left: 153px;
+  margin: 40px;
+  height: 100px;
+  margin-top: 0px;
 }
