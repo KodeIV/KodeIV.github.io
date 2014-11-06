@@ -71,21 +71,25 @@ function cocaineMap(){
 function fillColor(id){
 
       var prices = cokeObj[id];
+      console.log(prices);
 
-            if (typeof prices === "undifined"){
-              return ("fill", "#F8F8F8");
+            if (typeof prices === "undefined"){
+              return ("fill", "#A6A6A6");
             }
-            if ( prices && selector === "retail"){
-              return colorRetail(prices.retail*50);
 
+            if ( prices && selector === "retail"){
+              return colorRetail(prices.retail*15);
+
+            }
+
+             if ( prices.wholesale === ""){
+             return ("fill", "#A6A6A6");
             }
 
            if ( prices && selector === "wholesale"){
-               return colorWholesale(prices.wholesale*50);
+               return colorWholesale(prices.wholesale*3);
             }
-            if ( prices === null){
-             return ("fill", "#F8F8F8");
-            }
+           
           }
 
       var countries = topojson.feature(world, world.objects["world.geo"]).features;
