@@ -18,6 +18,7 @@ h2 {
   text-align:relative;
   padding-top: 50px;
   padding-bottom: 15px;
+  font-family: 'Amatic SC', cursive;
 }
 h3 {
     text-align: center;
@@ -172,15 +173,18 @@ a:active {
 }
 .projectPictures:hover{
     opacity: 1.0;
-    filter: alpha(opacity=50);
+    filter: alpha(opacity=10);
 
 }
-
 
 .LYN {
   float: none;
 }
 
+
+.week6img {
+  max-height: 400px;
+}
 
 /*These are classes for backgrounds on the contact page widgets.*/
 

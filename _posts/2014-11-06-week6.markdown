@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Week 6"
+---
+
+#Week 6: Build a blog with HAPI
+
+Our project for Week 6 was to build a blog using the hapi framework. 
+Our blog was required to have the following features: 
+- submission of new blog entries
+- viewing of existing entries
+- editing of existing blog entries
+- listing of all blog entries
+
+We learnt about building a RESTful API using hapi, and this week's Repo Owners provided a great introduction to the concept in a lightening talk presentation. 
+
+The DevOps were kept busy researching validation with joi, as well as connecting to Mongo DB and getting our production environment fully functioning. 
+
+The Testers had yet another testing framework to get to grips with: this week we used LAB, which is a testing framework that is a part of the hapi framework. We also explored error handling with BOOM, but decided that LAB was more than enough to get our heads around, particularly when we discovered the existence of spies, stubbing and mocking.
+
+Thanks to blogger Fionn Kelleher, we found [this](https://medium.com/@_expr/the-pursuit-of-hapi-ness-d82777afaa4b) tutorial on hapi and [this](https://medium.com/the-spumko-suite/testing-hapi-services-with-lab-96ac463c490a) tutorial on LAB incredibly useful to get us going. 
+
+Week 6 was also notable as we began morning programming challenges this week. Dan set us a programming challenge every morning to crack in pairs as and when we arrived in the classroom. Our first challenge was:
+"Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”."
+
+###Click [here](http://stormy-bayou-4265.herokuapp.com/home) to see our blog hosted live on heroku!
