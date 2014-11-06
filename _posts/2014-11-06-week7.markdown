@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Week 6"
+---
+
+##Week 7: Add a comment feature to the HAPI blog
+
+This week, our task was to continue to build on last week's HAPI blog, and specifically, to add a commenting feature. The comment feature needed to be:
+- a separate service
+- accessible as a json
+- loaded into our page with jQuery
+
+As usual, we all took on a different role and between us, we explored authentication and user registration using hapi-auth-cookie and bell. Authentication proved to be a tricky task, and even after an entire week spent working on it, we didn't quite manage to get it working. You can log in via Facebook and Gmail, though. 
+
+We were more successful with our caching using catbox, but we realised we didn't really need it for a project of such small scope. 
+
+###The client is always right.
+
+This week we also experimented with a new model where each team became a client as well as a web agency working on a client's (another team) project. We thought this would help us continue to sharpen up our agile methods and also spur each time to push that bit harder to complete our sprint objectives. 
+
+###Key learnings
+Writing a comment feature is HARD. We didn't quite manage to complete the task but our clients let us off this week. 
+
+
