@@ -19,6 +19,7 @@ h2 {
   padding-top: 50px;
   padding-bottom: 15px;
   font-family: 'Amatic SC', cursive;
+  color: #90b89d;
 }
 h3 {
     text-align: center;
@@ -33,6 +34,13 @@ h3 {
     width: auto;
 
 }
+
+.lead{
+  font-family: 'Amatic SC', cursive;
+  line-height: 1em auto;
+  color: #92ba9d;
+}
+
 a{
   padding-bottom: 15px;
 }
@@ -72,8 +80,6 @@ a:active {
   height:80px;
   width: 60px;
 }
-
-
 
 .container-fluid {
   padding:0;
@@ -158,14 +164,16 @@ a:active {
   line-height: 1em auto;
   color: #ffa46f;
   padding-left: 30px;
-  padding-top: 50px;
+  padding-top: 0;
   position: fixed, center;
   padding-bottom: 0;
 }
 
-/*.HUD {
-  height:473px;
-}*/
+.npad {
+    text-align:relative;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 0;
+}
 
 #projectDays {
   position: relative;
@@ -202,6 +210,7 @@ a:active {
   border-radius: 15px;
 }
 
+
 /*These are classes for backgrounds on the contact page widgets.*/
 
 #socialmediainsta {
@@ -215,6 +224,10 @@ a:active {
 
 
 /*these are background page's css*/
+#D3background {
+  background-color: #10313c;
+  height:100%;
+}
 
 #cbackgroundimg {
   background-color: #327389;
@@ -225,7 +238,7 @@ a:active {
   height: 100%;
 }
 #pbackgroundimg {
-  background-color: #449bb5;
+  background-color: #10313c;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -320,6 +333,7 @@ font-size: 15px;
   stroke-linejoin: round;
   border-width: 5px;
   height:650px;
+  padding-bottom: 30px;
 }
 
 .btn-primary{
@@ -334,7 +348,7 @@ font-size: 15px;
 		opacity: 1.0;
     background-color:#f89d61;
     border-width: 5px;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 10px #327389;
     margin-bottom: 0;
     border-color: #357ebd;
     margin-bottom:-10px;
@@ -361,7 +375,7 @@ font-size: 15px;
     opacity: 1.0;
     background-color:#bc365e;
     border-width: 5px;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 10px #327389;
     border-color: #357ebd;
     margin-bottom: -10px;
 }
