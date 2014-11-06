@@ -1,5 +1,5 @@
 $(document).ready(function() {
- 
+
 
  var fillNews = function (sect) {                                                                              // function created, names 'fillNews'. Passed 'sect' as a parameter.
 
@@ -15,24 +15,21 @@ $.ajax({
            // a thumbnail is appended to the 'sect'id.
          }
                                                                                              // else
-       $("#" + sect).append((i+1) + ". " + "<a href='"                                                          //  THIS IS ONE APPEND. 
+       $("#" + sect).append((i+1) + ". " + "<a href='"                                                          //  THIS IS ONE APPEND.
            + data.response.results[i].webUrl + "'>"                                                             //
            + data.response.results[i].webTitle + "</a><br>"                                                     //
               + data.response.results[i].fields.trailText.substring(0,146) + "..." + "<br><br>" + "<p></p>");                                        // trail text adds the 'trailing text'
-                                                             
+
            }
        }
    });
 
 };
 
-fillNews ("uk-news");                                                        
-fillNews ("football");                                                                                          
+fillNews ("uk-news");
+fillNews ("football");
 fillNews ("travel");
 
  $("div#tabs").tabs();
 
  });
-
-
- 

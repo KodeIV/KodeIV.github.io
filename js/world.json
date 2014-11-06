@@ -1,4 +1,4 @@
-{"type":"Topology","objects":{"wdata":{"type":"GeometryCollection","geometries":
+{"type":"Topology","objects":{"world.geo":{"type":"GeometryCollection","geometries":
 [{"type":"Polygon","properties":{"name":"Afghanistan","continent":"Asia"},"id":"AF","arcs":[[0,1,2,3,4,5,6,7,8,9]]},
 {"type":"MultiPolygon","properties":{"name":"Angola","continent":"Africa"},"id":"AO","arcs":[[[10,11,-12,11,12,13,14,15,16,17,18,19]],[[20,21,22]]]},
 {"type":"Polygon","properties":{"name":"Albania","continent":"Europe"},"id":"AL","arcs":[[23,24,25,26,27,28,29]]},

@@ -1,0 +1,190 @@
+---
+layout: page
+---
+ <body>
+   <h3>Global Cocaine Prices</h3>
+   <button type="button" class="btn btn-primary btn-lg pull-center" id="retailButton">Retail</button>
+   <button type="button" class="btn btn-danger btn-lg pull-center" id="wholesaleButton">Wholesale</button>
+
+   <div id="map"></div>
+
+
+   <script>
+
+         var world, cocaine;
+         var selector = "retail";
+
+       // document.addEventListener('DOMcontentLoaded', function(){
+
+       $("#retailButton").on("click", function(){
+           selector = "retail";
+
+           cocaineMap();
+        });
+
+        $("#wholesaleButton").on("click", function(){
+           selector = "wholesale";
+
+           cocaineMap();
+        });
+   // })
+
+    var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
+    var projection = d3.geo.robinson().translate([500, 250]);
+    var path = d3.geo.path().projection(projection);
+
+    var colorRetail = d3.scale.linear()
+        .domain([10, 1200])
+        .range(["#f89d61","#cc3300"]);
+
+    var colorWholesale = d3.scale.linear()
+        .domain([10, 200000])
+        .range(["#cc3366","#660033"]);
+
+    //var retailArray = [];
+    //var wholesaleArray = [];
+
+
+
+function cocaineMap(){
+         var cokeObj = {};
+              for (i=0; i < cocaine.length; i++){
+                    var datum = cocaine[i];
+                    var name = datum["Country name"];
+                    var code = datum["Alpha-2"];
+                    var retail = datum["Retail price"];
+                    var wholesale = datum["Wholesale price"];
+
+
+
+            cokeObj[code] = {
+              name: name,
+              code: code,
+              retail: retail,
+              wholesale: wholesale
+
+            };
+
+        }
+
+
+function fillColor(id){
+
+      var prices = cokeObj[id];
+
+            if (typeof prices == "undifined"){
+              return ("fill", "#F8F8F8");
+            }
+            if ( prices && selector === "retail"){
+              return colorRetail(prices.retail*50);
+
+            }
+
+           if ( prices && selector === "wholesale"){
+               return colorWholesale(prices.wholesale*50);
+            }
+            if ( prices === null){
+             return ("fill", "#F8F8F8");
+            }
+          }
+
+      var countries = topojson.feature(world, world.objects["world.geo"]).features;
+          for (var i=0; i<countries.length; i++) {
+              svg.append("path")
+              //.data(cokeObj
+              .attr("id", countries[i].id)
+              .attr("d", path(countries[i]))
+              .attr("fill", fillColor(countries[i].id));
+
+        }
+}
+
+      d3.json("/js/world.json", function(loadWorld) {
+          world = loadWorld;
+          if (typeof cocaine !== "undefined"){
+            cocaineMap();
+          }
+      });
+
+
+      d3.csv("/js/cocaine-per-gram.csv", function(loadData){
+          cocaine = loadData;
+          if(typeof world !== "undefined") {
+            cocaineMap();
+          }
+      });
+  </script>
+</body>
+
+   <!--<script>
+   //SVG simiar to a DIV - its a <tag> its used to define shapes using path elements
+   //Think about it as a canvas, each point/co-ordinate in this case creating a map.
+     var svg = d3.select("#map").append("svg").attr("viewBox", "0 0 1000 500");
+    //projection is a way of laying out a 3D object into 2D plain. Most commonly used in maps.
+     var projection = d3.geo.robinson().translate([500, 250]);
+     //you will be using paths in the future and you will use the projection we noted the step before
+     var path = d3.geo.path().projection(projection);
+
+     var world, cocaine, countries;
+
+     function cocaineMap(){
+       //topojson stores geometry data .feature returns the data you want
+       //in this case the it is world data - this decodes the data into a usable format
+          countries = topojson.feature(world, world.objects["world.geo"]).features;
+          console.log(countries)
+      //loop through all the countries
+         for (var i=0; i<countries.length; i++) {
+      //for each country append the canvas with a path element,
+      //set its id attribute to the countries id
+      //set its d attribute to the path data (d atribute sets the outline co-ordinates)
+         svg.append("path").attr("id", countries[i].id).attr("d", path(countries[i]))}
+
+         testingCoke ();
+     };
+     //pulls the file data, one the data is back, its passed to the loadWorld function
+     //variable defined line 21
+     //they will only happen when the data is loaded
+     d3.json("/js/world.json", function(loadWorld) {
+         world = loadWorld;
+         if (typeof cocaine !== "undefined") cocaineMap();
+     });
+
+      //pulls the file data, one the data is back, its passed to the loadWorld function
+      //variable World defined line 21
+      //they will only happen when the data is loaded,
+     d3.json("/js/cocaine.json", function(loadData){
+           cocaine = loadData;
+           if(typeof world !== "undefined") cocaineMap();
+     //which ever fucntion is loaded second push the map.
+    });
+
+    function testingCoke() {
+    //select all ["world.geo"] it is the equivialnt to the JQuery Library
+    svg.selectAll(".countries")
+    //bind the array data to the countries data -
+      .data(countries)
+    //.enter selects the bits of data that are unbound to an HTML tag
+    //SVG is appended path tags that are bound to the lefover data.
+      .enter().append("path")
+    //when you pass a function to this method, it pass countries with the data's id.
+      .attr("class",function(d) {return "countries" + d.id})
+    //will set the co-ordinates to the path.
+      .attr("d", path)
+      .style("fill", "white");
+    }
+      //data fetch and processing
+
+  /*  var prData = [];
+    minRetailPrice = 100000,
+    maxRetailPrice = 0,
+    minWholesalePrice = 100000,
+    maxWholesalePrice = 0;
+
+    var dataArray = [20, 40, 50, 60];
+    var cokeData = d3.scale.linear()
+      .domain([minRetailPrice, maxRetailPrice])
+      .range(["#a6fcd1 ", "#00773d "])*/
+
+
+
+   </script>-->
