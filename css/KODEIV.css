@@ -167,7 +167,7 @@ a:active {
     width:auto;
     display: inline-block;
     border-radius:25px;
-    opacity: 0.4;
+    opacity: 0.8;
     filter: alpha(opacity=40);
 }
 .projectPictures:hover{
