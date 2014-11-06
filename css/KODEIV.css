@@ -197,12 +197,17 @@ a:active {
 /*these are background page's css*/
 
 #cbackgroundimg {
-  background-image: url("http://i.imgur.com/VwL8ryV.jpg");
+  background-color: gray;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   padding:50px;
   height: 100%;
+}
+
+.fb-like-box {
+  width: 378px;
+  background-color: #333333;
 }
 
 
