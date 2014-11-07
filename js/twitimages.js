@@ -1,6 +1,4 @@
-twitimages.js
 
-maxg [4:31 PM]
 var Twit = require('twit');
 var fs = require('fs')
 
