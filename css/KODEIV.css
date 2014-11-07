@@ -16,7 +16,7 @@ h1 {
 
 h2 {
   text-align:relative;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 15px;
   font-family: 'Amatic SC', cursive;
   color: #90b89d;
@@ -203,7 +203,10 @@ a:active {
 .LYN {
   float: none;
 }
-
+.KIV{
+  height: 455px;
+  width: 556px;
+}
 
 .week6img {
   max-height: 400px;
@@ -323,18 +326,17 @@ font-size: 15px;
 
 /*D3 Map*/
 #map {
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 360px;
-  stroke: #10313c;
-  stroke-width: 1px;
-  background-color: #568bb8;
-  stroke-linejoin: round;
-  border: solid #8aae93;
-  border-width: 2px;
-  height:650px;
-  padding-bottom: 30px;
+ margin-top: 30px;
+ margin-left: 10px;
+ margin-right: 10px;
+ border-radius: 360px;
+ stroke: #8aae93 ;
+ stroke-width: 1px;
+/*0033668*/  background-color: #568bb8 ;
+ stroke-linejoin: round;
+ border-width: 5px;
+ height:650px;
+ padding-bottom: 30px;
 }
 
 .btn-primary{
